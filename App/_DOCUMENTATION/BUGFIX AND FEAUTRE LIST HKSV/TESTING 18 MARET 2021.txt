@@ -1,0 +1,33 @@
+Login kurang intuitif pada dasbor
+
+Typo dibanti
+
+DONE Home ada langsung menu beasiswa
+//
+DONE Ruang konseling navbar diam
+//
+DONE Confirmation Akhiri konseling
+//
+DONE Cerita konseli harus dikirim ke ruang konseling
+//
+ONGOING chat lama bisa dibuka kembali sebagai arsip
+//
+ONGOING Tambahkan konselor menjadi permintaan tambah konselor
+//
+ONGOING//IDK Pilih konselor menggunakan algoritma
+//
+ONGOING Email notification
+//
+ONGOIN Tutup dan buka kembali sesi konseling lama
+//
+ONGOING Tambahkan untuk melihat konselor menghandle beberapa sesi
+//
+ONGOING Survey kepuasan email
+//
+ONGOING Grafik laporan
+
+
+Tampilan bertumpuk di (transparan tanpa blur)
+Tampilan bertumpuk content height tabrakan (transparan tanpa blur)
+Iphone 7
+Samsung Galaxy
