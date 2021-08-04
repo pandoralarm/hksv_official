@@ -52,7 +52,7 @@
   <body>
   <script>
   
-    console.log("bro");
+    console.log("starting serviceworker");
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
             navigator.serviceWorker.register('https://alansbox.online/worker.js?v=4').then(function(registration) {
