@@ -27,7 +27,7 @@
                   <label for="proditag">
                     <small class="help" style="left: 0;"><a href="#">Program Studi</a> </small>
                   </label>
-                  <input disabled class="w-100 textform px-3 py-2" type="text" id="proditag" name="useridtag" value="<?= $prodi ?>">
+                  <input disabled class="w-100 textform px-3 py-2" type="text" id="proditag" name="useridtag" value="<?php print_r($prodi) ?>">
                   
                   <label for="roletag">
                     <small class="help" style="left: 0;"><a href="#">Status Akun</a> </small>

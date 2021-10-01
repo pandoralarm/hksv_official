@@ -87,6 +87,7 @@ class Penilaian extends Controller
             'kreativitas'           => $dataPenilaian[0]['kreativitas'],
             'kemampuanBerkelompok'  => $dataPenilaian[0]['kemampuanBerkelompok'],
             'kemampuanTeknis'       => $dataPenilaian[0]['kemampuanTeknis'],
+            'catatan'       => $dataPenilaian[0]['catatan'],
         ];
         $html = view("template/rekomendasi", $data);
         $html .= '<style>'.file_get_contents(base_url('assets/css/template/stylerekomendasi.css')).'</style>';

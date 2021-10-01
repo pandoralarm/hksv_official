@@ -4,56 +4,36 @@
       <template>
 
       <?php if ($logged) {
-              $profiltarget = " nav.changeWindow('profileform');  profileform.notifycheck();";
+              $profiltarget = "nav.changeWindow('profileform');  profileform.notifycheck();";
               switch ($role) {
                 case 'ADMIN':
-                  $KonselingTarget = "changeSubmenu('menuKonselor')";
+                  $perwaTarget = "";
                   break;
                 
                 case 'MAHASISWA':
-                  $KonselingTarget = "checkThread()";
+                  $perwaTarget = "nav.changeWindow('pengajuanbaru');";
                   break;
 
                 case 'KONSELOR':
-                  $KonselingTarget = "getOwnedThreads()";
+                  $perwaTarget = "";
                   break;
 
                 case 'SEKPRODI':
-                  $KonselingTarget = "getOwnedThreads()";
+                  $perwaTarget = "";
                   break;    
 
                 default:
-                  $KonselingTarget = "alertNow('Error : ', 'Pastikan kamu seorang mahasiswa ya!')";
+                  $perwaTarget = "alertNow('Error : ', 'Pastikan kamu seorang mahasiswa ya!')";
                   break;
               }
             } else {
-              $KonselingTarget = ("goTo('account/signin')");
+              $perwaTarget = ("goTo('account/signin')");
               $profiltarget = "goTo('account/signin')";
             }
       ?>
 
-        <div v-on:click="<?= $profiltarget ?>"  class="konseling-menu events shadow-sm text-center">
-            <?php if (!$logged) { ?>
-
-              <div class="text w-100">
-                <span class="title">Halo, Anonymous!</span>
-                <p class="subtitle">Tap disini untuk masuk. </p>
-                
-              </div>
-
-            <?php } else { ?>
-            
-              <div class="text w-100">
-                <span class="title">Halo, <?= $name ?></span>
-                <p class="subtitle"> <u> Buka profil </u> </p>
-                
-              </div>
-
-            <?php } ?>
-
-        </div>
-
-        <div v-on:click="<?= $KonselingTarget ?>" class="konseling-menu ruang-konseling shadow-sm border">
+        
+        <div v-on:click="<?= $perwaTarget ?>" class="konseling-menu ruang-konseling shadow-sm border">
           <div class="text">
             <span class="title">Ajukan Surat Rekomendasi</span>
             <p class="subtitle">Disini kamu dapat mengajukan surat rekomendasi
@@ -66,18 +46,22 @@
           </div>
         </div>
 
-        <div v-on:click="changeSubmenu('beasiswa'); changeMenu('beasiswa');" class="konseling-menu blogs shadow-sm border">
-          <div class="text">
-          <span class="title">Informasi Beasiswa</span>
-            <p class="subtitle">Jangan terlewat informasi beasiswa terbaru 
-              yang bisa kamu ikuti dari sini ya!
-            </p>
+        <?php if ($logged) {?>
+            
+          <div v-on:click="changeWindow('pengajuansaya'); pengajuan.initiategrid();" class="konseling-menu blogs shadow-sm border">
+            <div class="text">
+            <span class="title">Pengajuan Saya</span>
+              <p class="subtitle">Lihat status pengajuan surat rekomendasi yang kamu kirim disini!
+              </p>
+            </div>
+            <div class="banner"></div>
+            <div class="">
+              <u>  <small> Klik Disini! </small>  </u>
+            </div>
           </div>
-          <div class="banner"></div>
-          <div class="">
-            <u>  <small> Klik Disini! </small>  </u>
-          </div>
-        </div>
+
+        <?php } ?>
+
 
 
       </template>

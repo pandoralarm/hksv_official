@@ -54,6 +54,17 @@
         </div>
 
         <div v-on:click="<?= $KonselingTarget ?>" class="konseling-menu ruang-konseling shadow-sm border">
+          
+        <?php if ($role == 'ADMIN' || $role == 'KONSELOR') { ?>
+          <div class="text">
+            <span class="title">Ruang Konseling</span>
+            <p class="subtitle">Lihat sesi konseling aktif yang kamu miliki disini!</p>
+          </div>
+          <div class="banner"></div>
+          <div class="">
+            <u>  <small> Klik Disini! </small>  </u>
+          </div>
+        <?php } else { ?>
           <div class="text">
             <span class="title">Ruang Konseling</span>
             <p class="subtitle">Kamu akan dibantu oleh para 
@@ -64,19 +75,35 @@
           <div class="">
             <u>  <small> Klik Disini! </small>  </u>
           </div>
+        <?php } ?> 
+
+          
         </div>
 
-        <div v-on:click="changeMenu('beasiswa');" class="konseling-menu blogs shadow-sm border">
-          <div class="text">
-            <span class="title">Seputar Beasiswa</span>
-            <p class="subtitle">Kamu bisa mencari informasi beasiswa
-            terkini dan ajukan surat rekomendasi beasiswa!</p>
+        <?php if ($role == 'ADMIN' || $role == 'KONSELOR') { ?>
+        <div v-on:click="window.location.replace('https://halokonselingsv.ipb.ac.id/dasbor/app/rekomendasi/quick');" class="konseling-menu blogs shadow-sm border">
+        <div class="text">
+            <span class="title">Surat Rekomendasi</span>
+            <p class="subtitle">Lihat pengajuan surat rekomendasi yang diajukan oleh mahasiswa disini!</p>
           </div>
           <div class="banner"></div>
           <div class="">
             <u>  <small> Klik Disini! </small>  </u>
           </div>
         </div>
+        <?php } else { ?>
+        <div v-on:click="changeMenu('beasiswa');" class="konseling-menu blogs shadow-sm border">
+        <div class="text">
+            <span class="title">Surat Rekomendasi</span>
+            <p class="subtitle">Pada menu ini kamu bisa mengajukan surat rekomendasi beasiswa lho!</p>
+          </div>
+          <div class="banner"></div>
+          <div class="">
+            <u>  <small> Klik Disini! </small>  </u>
+          </div>
+        </div>
+        <?php } ?> 
+          
 
 
       </template>

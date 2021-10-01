@@ -2,7 +2,7 @@
 
 use CodeIgniter\Controller;
 
-class Signin extends Dashboard
+class Signin extends App
 {
     private $userModel;
 

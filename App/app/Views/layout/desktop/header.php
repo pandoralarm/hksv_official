@@ -17,6 +17,8 @@
     <meta property="og:url" content="<?= $url ?>" />
     <meta property="og:site_name" content="<?= $title ?>" />
     <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -38,7 +40,22 @@
     
     <title>Beasiswa</title>
 
-</head>
-    <body>
+    </head>
+  <body>
+  <script>
+  
+    console.log("starting serviceworker");
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('https://halokonselingsv.ipb.ac.id/worker.js?v=4').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+  </script>
         <script src="<?= base_url('assets/js/desktop/globals.js') ?>" ></script>
   

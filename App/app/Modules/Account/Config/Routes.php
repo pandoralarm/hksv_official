@@ -26,6 +26,7 @@ $routes->group('account', ['namespace' => 'App\Modules\Account\Controllers'], fu
 	$subroutes->add('signin/index', 'Signin::index');
 	$subroutes->add('signin/auth', 'Signin::auth');
 	$subroutes->add('signin/signout', 'Signin::signout');
+	$subroutes->add('signin/signoutdash', 'Signin::signoutdash');
 	$subroutes->add('signin/getAll', 'Signin::getAll');
 	$subroutes->add('signin/desktopAuth', 'Signin::desktopAuth');
 });

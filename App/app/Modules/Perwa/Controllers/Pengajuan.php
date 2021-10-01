@@ -24,10 +24,10 @@ class Pengajuan extends Controller
     {
         return view('errors/error_403');
     }
-
+    
     public function commit()
     {
-        $file = $this->request->getFile('cv');
+        $file = $this->request->getFile('cvinput');
         $newName = $file->getRandomName();
 
         $file->move('./uploads/cv/', $newName);
@@ -61,12 +61,13 @@ class Pengajuan extends Controller
             'ip5' => $ip_array[4],
             'ip6' => $ip_array[5],
             'ipk' => $ipk,
-            'namaBeasiswa' => $this->request->getPost('namaBeasiswa'),
-            'deadline' => $this->request->getPost('deadline'),
-            'cv' => $newName,
+            'namaBeasiswa' => $this->request->getPost('namabeasiswa'),
             'tanggalPengajuan' => date('Y-m-d'),
             'status' => "Diproses",
-            'dosenPJ' => "Belum Ada",
+            'cv' => $newName,
+            'pic' => "Belum Ada",
+            'nip' => "Belum Ada",
+            'catatan' => "Belum Ada",
         ];
 
         $this->pengajuan->insert($data);
@@ -74,7 +75,9 @@ class Pengajuan extends Controller
         
         $response = [
             'cvpath' => $data['cv'],
-            'deadline' => $data['deadline'],
+            'namaMhs' => $data['nama'],
+            'nimMhs' => $data['nim'],
+            'prodiMhs' => $data['prodi'],
             'namaBeasiswa' => $data['namaBeasiswa'],
         ];
 

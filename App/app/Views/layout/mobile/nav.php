@@ -47,7 +47,7 @@
       <div v-on:click="sidenavs" class="topicon-left"><i class="fa fa-bars fa-lg"></i></div>
       <?php if ($logged) { ?>
         <transition name="topright">
-          <div v-if="current_topright == 'default'" v-on:click="changeWindow('notifications')" class="topicon-right"><!-- <i class="fa fa-bell fa-lg"></i> --></div>
+          <!-- <div v-if="current_topright == 'default'" v-on:click="" class="topicon-right"><i class="fa fa-sync fa-lg"></i></div> -->
         </transition>
         <transition name="topright">
           <div v-on:click="search();" v-if="current_topright == 'search'" class="topicon-right"><i class="fa fa-search fa-lg"></i></div>
@@ -158,24 +158,31 @@
           </transition>
         </div>
 
+        <?php if ($role != 'ADMIN' || $role != 'KONSELOR') { ?>
         <div class="public-nav">
           <div v-on:click="changeMenu('beasiswa');" class="submenu" >Beasiswa</div>
           <transition name="fade">
             <ul id="sub_dash-beasiswa" v-if="current_menu == 'beasiswa'">
               <li v-on:click="changeSubmenu('home')" class="menu"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> - Home</a></li>
-              <li class=" menu"><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> - Beasiswa Dibuka</a></li>
-              <li class=" menu"><a href="#"><i class="fa fa-sticky-note" aria-hidden="true"></i> - Pengajuan Saya</a></li>
+              <?php if ($logged)  { ?> <li class=" menu"><a href="#"><i class="fa fa-sticky-note" aria-hidden="true"></i> - Pengajuan Saya</a></li> <?php } ?>
             </ul>
           </transition>
         </div>
+        <?php } ?>
+        
+        <?php if ($role == 'ADMIN' || $role == 'KONSELOR') { ?>
+        <div class="public-nav">
+          <div v-on:click="window.location.replace('https://halokonselingsv.ipb.ac.id/dasbor/app/rekomendasi/quick');" class="submenu" >Beasiswa</div>
+        </div>
+        <?php } ?>
 
         <?php if ($role == 'ADMIN' || $role == 'KONSELOR') { ?>
         <div class="admin-nav">
           <div v-on:click="changeMenu('admin');" class="submenu">Quick Tools</div>
           <transition name="fade">
             <ul id="sub_admin" v-if="current_menu == 'admin'">
+              <li v-on:click="window.location.replace('https://halokonselingsv.ipb.ac.id/dasbor');" class=" menu"><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> - Kunjungi Dasbor</a></li>
               <?php if ($role == 'ADMIN') { ?>
-                <li v-on:click="sidenavs(); changeWindow('managestaff'); changeTitle('DATA KONSELOR', '')" class=" menu"><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> - Kunjungi Dasbor</a></li>
                 <li v-on:click="sidenavs(); changeWindow('laporanform'); changeTitle('LAPORAN KONSELING', '')" class=" menu"><a href="#"><i class="fa fa-table" aria-hidden="true"></i> - Laporan Konseling</a></li>
               <?php } ?> 
               <li v-on:click="changeSubmenu('editblogs'); editblogs.collapse(); changeSubmenu('editblogs'); editblogs.getarticles()" class=" menu"><a href="#"><i class="fa fa-archive" aria-hidden="true"></i> - Kelola Blogs</a></li>

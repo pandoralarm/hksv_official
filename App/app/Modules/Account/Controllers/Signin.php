@@ -85,8 +85,14 @@ class Signin extends Auth
       'email' => $this->session->get('user').'@apps.ipb.ac.id',
       'notify' => 1,
     ];
+
+    if ($this->EmailsModel->find($data['username'])){
+      return $this->EmailsModel->update($data['username'], $data);
+    } else {
+      return $this->EmailsModel->insert($data);     
+    }
     
-    return $this->EmailsModel->insert($data);
+
   }
 
 
@@ -138,17 +144,25 @@ class Signin extends Auth
     return redirect()->to('/');
   }
 
+  public function signoutdash()
+  {
+    $this->session->destroy();
+    $this->session->set('logged', false);
+    return redirect()->to('/dasbor');
+  }
+
   private function setUserSession($User)
   {
     if ($User->Status == 'Dosen') {
       $role = $this->getRole($User->NIP);
       if ($role) {
         // SET USER SESSION JIKA USER MEMILIKI ROLE
+        $getProdi = $this->DosenModel->find($User->NIP);
         $user_session = [
           'user'    => $User->Username,
           'nama'    => $User->NamaGelar,
           'nip'     => $User->NIP,
-          'prodi'   => '',
+          'prodi'   => $getProdi->Prodi,
           'role'    => $role,
           'logged'  => TRUE
         ];

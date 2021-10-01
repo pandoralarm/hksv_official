@@ -7,9 +7,9 @@
 
 
   <!-- IMPORTANT TAGS -->
-  <title><?= $title ?></title>
-  <meta name="title" content="<?= $title ?>" />
-	<meta name="description" content="<?= $description ?>" />
+  <title>HaloKonselingSV - Layanan Konseling Untuk SV</title>
+  <meta name="title" content="HaloKonselingSV - Layanan Konseling Untuk SV" />
+	<meta name="description" content="Website Komisi Bimbingan dan Konseling Sekolah Vokasi IPB" />
 	<meta name="keywords" content="<?= $keywords ?>" />
   <meta property="og:locale" content="id_ID" />
 	<meta property="og:title" content="<?= $title ?>" />
@@ -17,7 +17,9 @@
 	<meta property="og:url" content="<?= $url ?>" />
 	<meta property="og:site_name" content="<?= $title ?>" />
   <meta name="mobile-web-app-capable" content="yes">
-
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <!-- Chrome, Firefox, & Opera color theme -->
   <meta name="theme-color" content="#9D6EC1">
 
@@ -46,6 +48,9 @@
   <!-- HKSV Style -->
   <link rel="stylesheet" href="<?= base_url('assets/css/mobile/style.css') ?>" />
   <script type="text/javascript"  src="<?= base_url('assets/js/dependencies/tinymce/tinymce.min.js') ?>" ></script>
+  <!-- datatables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.2/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.js"></script>
 
   
 </head>
@@ -55,7 +60,7 @@
     console.log("starting serviceworker");
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-            navigator.serviceWorker.register('https://alansbox.online/worker.js?v=4').then(function(registration) {
+            navigator.serviceWorker.register('https://halokonselingsv.ipb.ac.id/worker.js?v=4').then(function(registration) {
             // Registration was successful
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
         }, function(err) {
@@ -67,5 +72,4 @@
   </script>
 
   <script src="<?= base_url('assets/js/mobile/globals.js') ?>" ></script>
-  
 

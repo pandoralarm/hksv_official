@@ -61,6 +61,9 @@ var nav = new Vue({
           // code block
       };
     },
+    eraseCache(){
+      window.location = window.location.href+'?eraseCache=true';
+    },
     deleteitem() {
       this.confirmdeletion = true;
     },

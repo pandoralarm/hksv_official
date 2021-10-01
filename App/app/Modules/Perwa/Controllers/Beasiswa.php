@@ -36,6 +36,9 @@ class Beasiswa extends Controller
             'status' => True,
         ];
         $this->beasiswa->insert($data);
+        header("Location: https://halokonselingsv.ipb.ac.id/dasbor/app/rekomendasi/beasiswa");
+        die();
+
     }
 
     public function showBeasiswa()

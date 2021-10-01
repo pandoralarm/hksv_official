@@ -28,6 +28,7 @@ $routes->group('account', ['namespace' => 'App\Modules\Account\Controllers'], fu
 	$subroutes->add('signin/profileAdd', 'Signin::profileAdd');
 	$subroutes->add('signin/desktopAuth', 'Signin::desktopAuth');
 	$subroutes->add('signin/signout', 'Signin::signout');
+	$subroutes->add('signin/signoutdash', 'Signin::signoutdash');
 	$subroutes->add('signin/post/(:alphanum)/(:alphanum)', 'Signin::post/$1/$2');
 
 });

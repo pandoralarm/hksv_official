@@ -26,7 +26,7 @@ class Home extends Controller
   public function index()
   {
     $appData = [
-      'title'       => 'HaloKonselingSV',
+      'title'       => 'HaloKonselingSV - Layanan Konseling Untuk SV',
       'description' => 'Website Komisi Bimbingan dan Konseling Sekolah Vokasi IPB',
       'keywords'    => 'konseling, svipb, sv, bimbingan, konsultasi, masalah, curhat',
       'url'         => base_url(),
@@ -61,6 +61,7 @@ class Home extends Controller
       echo view('konseling/mobile/pantauchat', $appData);
       echo view('konseling/mobile/requestform');
       echo view('perwa/mobile/home', $appData);
+      echo view('perwa/mobile/pengajuan', $appData);
       echo view('layout/mobile/footer');
     } else {
       echo view('layout/desktop/header', $appData);

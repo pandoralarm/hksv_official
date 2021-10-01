@@ -3,12 +3,12 @@
     "name": "HaloKonselingSV - Komisi Bimbingan dan Konseling Sekolah Vokasi IPB",
     "icons": [
       {
-        "src": "https://www.pngitem.com/pimgs/m/171-1714437_helping-hands-logo-png-transparent-png.png",
+        "src": "https://halokonselingsv.ipb.ac.id/assets/img/Components/logo144.png",
         "type": "image/png",
         "sizes": "144x144"
       },
       {
-        "src": "https://www.pngitem.com/pimgs/m/171-1714437_helping-hands-logo-png-transparent-png.png",
+        "src": "https://halokonselingsv.ipb.ac.id/assets/img/Components/logo512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
