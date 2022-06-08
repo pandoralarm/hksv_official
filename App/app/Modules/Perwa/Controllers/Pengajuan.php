@@ -24,6 +24,35 @@ class Pengajuan extends Controller
     {
         return view('errors/error_403');
     }
+
+    public function getPengajuan($nim){
+        $listPengajuan = $this->pengajuan->where('nim', $nim)->orderBy('idPengajuan', 'desc')->findAll();
+        $output = array();
+
+        $index = 0;
+        foreach ($listPengajuan as $pengajuan) {
+
+            
+            switch ($pengajuan->status) {
+                case "Disetujui":
+                    ob_start();
+                    array_push($output,[$pengajuan->namaBeasiswa,'<td><a href="'.base_url("perwa/penilaian/cetakRekomendasi/".$pengajuan->idPengajuan).'" class="btn btn-danger w-100"> <i class="fas fa-file-pdf"></i> </a></td>']);
+                    break;
+
+                case "Ditolak":
+                    array_push($output,[$pengajuan->namaBeasiswa,'Ditolak']);
+                    break;
+
+                default:
+                    array_push($output,[$pengajuan->namaBeasiswa,'Diproses']);
+            }
+            
+            $index++;
+        }
+        
+        return json_encode($output);
+
+    }
     
     public function commit()
     {
@@ -67,7 +96,6 @@ class Pengajuan extends Controller
             'cv' => $newName,
             'pic' => "Belum Ada",
             'nip' => "Belum Ada",
-            'catatan' => "Belum Ada",
         ];
 
         $this->pengajuan->insert($data);
@@ -83,6 +111,7 @@ class Pengajuan extends Controller
 
         return json_encode($response);
     }
+    
     public function tolakRekomendasi(){
         $data = [
             'catatan'   => $this->request->getPost('alasan'),

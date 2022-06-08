@@ -2,7 +2,7 @@
 <html lang="en">
 <table style="width=100%">
     <tr style="width:100%;">
-        <td style="width:100%;"><img src="<?= base_url('assets/img/Components/Template/header.jpg')?>" style="width:595px; height:120px"></td>
+        <td style="width:595px; height:120px;"></td>
     </tr>
 </table>
 <br>
@@ -273,7 +273,7 @@
         <td>Catatan Tambahan:</td>
     </tr>
     <tr>
-        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ullam officia natus exercitationem cupiditate dicta labore repellendus fugit eligendi inventore distinctio similique dignissimos, ea recusandae doloremque quibusdam! Earum, et tenetur!</td>
+        <td><?= $catatan ?></td>
     </tr>
 </table>
 <br><br><br><br> 

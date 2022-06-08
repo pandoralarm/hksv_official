@@ -165,7 +165,7 @@ class Chatroom extends Controller
 
     public function getOpenThread()
     {
-      $livechats = $this->chats->where("ThreadStatus = 'OPEN' GROUP BY ThreadKey")->findALl();
+      $livechats = $this->chats->where("ThreadStatus = 'OPEN' GROUP BY ThreadKey")->findAll();
       $activerooms = $livechats;
 
       $index = 0;

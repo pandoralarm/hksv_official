@@ -73,7 +73,7 @@ class Penilaian extends Controller
         $dataPengajuan = json_decode( json_encode($dataPengajuan), true);
         $dataPenilaian = json_decode( json_encode($dataPenilaian), true);
         $data = [
-            'namaDosen'             => $dataPengajuan[0]['dosenPJ'],
+            'namaDosen'             => $dataPengajuan[0]['pic'],
             'nip'                   => $dataPengajuan[0]['nip'],
             'namaMahasiswa'         => $dataPengajuan[0]['nama'],
             'namaBeasiswa'          => $dataPengajuan[0]['namaBeasiswa'],
@@ -98,11 +98,19 @@ class Penilaian extends Controller
         $pdf->setPrintHeader(false);
         $pdf->setPrintFooter(false);
         $pdf->SetMargins(PDF_MARGIN_LEFT, 0, PDF_MARGIN_RIGHT);
+
+        // get the current page break margin
+        $bMargin = $pdf->getBreakMargin();
+        // get current auto-page-break mode
+        $auto_page_break = $pdf->getAutoPageBreak();
+        // disable auto-page-break
+        $pdf->SetAutoPageBreak(false, 0);
         $pdf->AddPage();
         // Print text using writeHTMLCell()
-        $img_file = base_url('assets/img/Components/Template/logo_ipb.png');
-        $pdf->Image($img_file, 65, 95, 90, 90, '', '', '', false, 300, '', false, false, 0);
-        // Image( filename, left, top, width, height, type, link, align, resize, dpi, align, ismask, imgmask, border, fitbox, hidden, fitonpage)
+        
+        $img_file = base_url('assets/img/Components/Template/watermark-exp.png');
+        $pdf->Image($img_file, 0, 0, 210, 297, 'png', '', '', false, 300, '', false, false, 0);
+        // Image( filename, left, top, width(mm), height(mm), type, link, align, resize, dpi, align, ismask, imgmask, border, fitbox, hidden, fitonpage)
         $pdf->writeHTML($html);
         $this->response->setContentType('application/pdf');
         $pdf->Output( 'Rekomendasi_'.$dataPengajuan[0]['nim'].'.pdf', 'D');

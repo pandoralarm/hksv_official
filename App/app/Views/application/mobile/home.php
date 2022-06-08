@@ -36,7 +36,7 @@
             <?php if (!$logged) { ?>
 
               <div class="text w-100">
-                <span class="title">Halo, Anonymous!</span>
+                <span class="title">Halo, Dunia!</span>
                 <p class="subtitle">Tap disini untuk masuk. </p>
                 
               </div>
@@ -80,8 +80,8 @@
           
         </div>
 
-        <?php if ($role == 'ADMIN' || $role == 'KONSELOR') { ?>
-        <div v-on:click="window.location.replace('https://halokonselingsv.ipb.ac.id/dasbor/app/rekomendasi/quick');" class="konseling-menu blogs shadow-sm border">
+        <!-- <?php if ($role == 'ADMIN' || $role == 'KONSELOR') { ?>
+        <div v-on:click="nav.sidenavs(); changeMenu('admin');" class="konseling-menu blogs shadow-sm border">
         <div class="text">
             <span class="title">Surat Rekomendasi</span>
             <p class="subtitle">Lihat pengajuan surat rekomendasi yang diajukan oleh mahasiswa disini!</p>
@@ -91,7 +91,9 @@
             <u>  <small> Klik Disini! </small>  </u>
           </div>
         </div>
-        <?php } else { ?>
+        <?php ?> -->
+        
+<!--          else { ?>
         <div v-on:click="changeMenu('beasiswa');" class="konseling-menu blogs shadow-sm border">
         <div class="text">
             <span class="title">Surat Rekomendasi</span>
@@ -102,7 +104,7 @@
             <u>  <small> Klik Disini! </small>  </u>
           </div>
         </div>
-        <?php } ?> 
+        <?php } ?>   -->
           
 
 

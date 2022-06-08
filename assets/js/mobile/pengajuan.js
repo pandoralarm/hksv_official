@@ -7,10 +7,12 @@ var pengajuan = new Vue({
     options: false,
     username: this.$cookies.get('username'),
     basepath: this.$cookies.get('basepath'),
-    mindate: "",
+    userid: this.$cookies.get('id'),
+    mindate: null,
     filemodel: null,
     form: 'blogheader',
-    dataPengajuanMhs: [],
+    dataPengajuanMhs: '',
+    dataPengajuanMhs2: ["Surat"],
     error: {
       alert: false,
       strong: '',
@@ -258,10 +260,6 @@ var pengajuan = new Vue({
     },
     initiategrid(){
       setTimeout(() => {
-
-
-
-        
         
         $('#tabel_pengajuan').DataTable( {
           paging: true,
@@ -285,12 +283,42 @@ var pengajuan = new Vue({
               last:       "Akhir",
               next:       "Selanjutnya",
               previous:   "Sebelumnya"
-          },
+            },
           },
         });
       }, 500);
-
-
-    }
+    },
+    getList(){
+      nav.loading(true);
+      axios.get(this.basepath+"/perwa/pengajuan/getPengajuan/"+this.userid)
+      .then(response => {
+        this.dataPengajuanMhs = response.data;
+      })
+      .catch(() => {
+        this.alertNow('Gagal!', 'Jaringan error! ');
+        nav.loading(false);
+      })
+      .finally(() => {
+        nav.loading(false);
+      });
+    },
+    updateList(){
+      nav.loading(true);
+      axios.get(this.basepath+"/perwa/pengajuan/getPengajuan/"+this.userid)
+      .then(response => {
+        this.dataPengajuanMhs = response.data;
+      })
+      .catch(() => {
+        this.alertNow('Gagal!', 'Jaringan error! ');
+        $('#tabel_pengajuan').dataTable().fnDestroy();
+        this.initiategrid();
+        nav.loading(false);
+      })
+      .finally(() => {
+        $('#tabel_pengajuan').dataTable().fnDestroy();
+        this.initiategrid();
+        nav.loading(false);
+      });
+    },
   },
 })

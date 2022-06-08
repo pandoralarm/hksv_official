@@ -158,7 +158,7 @@
           </transition>
         </div>
 
-        <?php if ($role != 'ADMIN' || $role != 'KONSELOR') { ?>
+<!--         <?php if ($role != 'ADMIN' || $role != 'KONSELOR') { ?>
         <div class="public-nav">
           <div v-on:click="changeMenu('beasiswa');" class="submenu" >Beasiswa</div>
           <transition name="fade">
@@ -174,19 +174,19 @@
         <div class="public-nav">
           <div v-on:click="window.location.replace('https://halokonselingsv.ipb.ac.id/dasbor/app/rekomendasi/quick');" class="submenu" >Beasiswa</div>
         </div>
-        <?php } ?>
+        <?php } ?> -->
 
         <?php if ($role == 'ADMIN' || $role == 'KONSELOR') { ?>
         <div class="admin-nav">
           <div v-on:click="changeMenu('admin');" class="submenu">Quick Tools</div>
           <transition name="fade">
             <ul id="sub_admin" v-if="current_menu == 'admin'">
-              <li v-on:click="window.location.replace('https://halokonselingsv.ipb.ac.id/dasbor');" class=" menu"><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> - Kunjungi Dasbor</a></li>
+              <li v-on:click="sidenavs(); changeWindow('managestaff'); changeTitle('STAFF', '')" class=" menu"><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> - Pengaturan Akun</a></li>
               <?php if ($role == 'ADMIN') { ?>
                 <li v-on:click="sidenavs(); changeWindow('laporanform'); changeTitle('LAPORAN KONSELING', '')" class=" menu"><a href="#"><i class="fa fa-table" aria-hidden="true"></i> - Laporan Konseling</a></li>
               <?php } ?> 
-              <li v-on:click="changeSubmenu('editblogs'); editblogs.collapse(); changeSubmenu('editblogs'); editblogs.getarticles()" class=" menu"><a href="#"><i class="fa fa-archive" aria-hidden="true"></i> - Kelola Blogs</a></li>
-              <li v-on:click="changeSubmenu('editevents')" class=" menu"><a href="#"><i class="fa fa-hashtag" aria-hidden="true"></i> - Kelola Events</a></li>
+              <li v-on:click="sidenavs(); changeSubmenu('editblogs'); editblogs.collapse(); changeSubmenu('editblogs'); editblogs.getarticles()" class=" menu"><a href="#"><i class="fa fa-archive" aria-hidden="true"></i> - Kelola Blogs</a></li>
+              <li v-on:click="sidenavs(); changeSubmenu('editevents')" class=" menu"><a href="#"><i class="fa fa-hashtag" aria-hidden="true"></i> - Kelola Events</a></li>
 
             </ul>
           </transition>

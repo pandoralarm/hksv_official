@@ -82,12 +82,12 @@
         <div class="form-group">
           <input type="password" class="form-control" name="password" id="password" placeholder="Password">
         </div>
-        <div class="form-check">
+<!--         <div class="form-check">
           <label class="form-check-label">
             <input type="checkbox" class="form-check-input" name="remember" id="remember" <?= ($rememberme) ? 'checked' : '' ?>>
             Remember username
           </label>
-        </div>
+        </div> -->
         <button type="submit" v-on:click="loading(true);" class="btn btn-light w-100 mt-3">Masuk</button>
         <div class="text-right">
           <a href="https://akun.ipb.ac.id/resetpassword" class="lupa"><small>Lupa Password ?</small></a>

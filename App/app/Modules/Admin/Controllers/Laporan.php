@@ -28,7 +28,7 @@ class Laporan extends Controller
 
     public function index()
     {
-      $result = $this->ChatModel->where('ThreadStatus', 'CLOSED')->where('DATE(Closed_at) BETWEEN "2021-04-07" AND "2021-05-02"')->findAll();   
+      $result = $this->ChatModel->where('ThreadStatus', 'CLOSED')->where('DATE(Closed_at) BETWEEN "2022-05-30" AND "2022-06-02"')->findAll();   
       $i=0;
 
       foreach ($result as $res) {

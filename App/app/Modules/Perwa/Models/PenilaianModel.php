@@ -14,7 +14,7 @@ class PenilaianModel extends Model
     protected $returnType     = 'object';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['idPengajuan', 'kemampuanAkademik', 'kemampuanLisan', 'kemampuanTertulis', 'motivasi', 'kestabilan', 'kreativitas', 'kemampuanBerkelompok', 'kemampuanTeknis'];
+    protected $allowedFields = ['idPengajuan', 'kemampuanAkademik', 'kemampuanLisan', 'kemampuanTertulis', 'motivasi', 'kestabilan', 'kreativitas', 'kemampuanBerkelompok', 'kemampuanTeknis', 'catatan'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

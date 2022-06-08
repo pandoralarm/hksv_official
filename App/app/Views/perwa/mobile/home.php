@@ -48,7 +48,7 @@
 
         <?php if ($logged) {?>
             
-          <div v-on:click="changeWindow('pengajuansaya'); pengajuan.initiategrid();" class="konseling-menu blogs shadow-sm border">
+          <div v-on:click="changeWindow('pengajuansaya'); pengajuan.getList(); pengajuan.initiategrid();" class="konseling-menu blogs shadow-sm border">
             <div class="text">
             <span class="title">Pengajuan Saya</span>
               <p class="subtitle">Lihat status pengajuan surat rekomendasi yang kamu kirim disini!

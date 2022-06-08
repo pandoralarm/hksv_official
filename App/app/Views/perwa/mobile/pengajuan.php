@@ -65,7 +65,7 @@
         <div class="bg-full">
           <div class="topnav forms">
           <div v-if="form == 'blogheader'" v-on:click="prev();changeWindow('blogform');changeTitle('HALOKONSELINGSV', 'Kamu Tidak Sendiri Disini 🤗')" class="topicon-right"><i class="fa fa-times fa-lg"></i></div>
-          <div class="topicon-left"><i class="fa fa-sync fa-lg"></i></div>
+          <div v-on:click="updateList();" class="topicon-left"><i class="fa fa-sync fa-lg"></i></div>
             <div class="text">
               <div class="title">{{ current_title }}</div>
               <div class="subtitle">{{ current_subtitle }}</div>

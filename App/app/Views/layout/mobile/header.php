@@ -36,8 +36,8 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Vue JS 2.6x CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuex"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuex@3"></script>
   <script src="https://unpkg.com/vue-cookies@1.7.4/vue-cookies.js"></script>
   <!-- AXIOS 0.12.x CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
