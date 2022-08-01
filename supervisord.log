@@ -53,3 +53,26 @@
 2022-06-15 08:59:16,337 INFO supervisord started with pid 1702
 2022-06-15 08:59:17,340 INFO spawned: 'Ratchet' with pid 1712
 2022-06-15 08:59:18,341 INFO success: Ratchet entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 18:37:34,262 INFO exited: Ratchet (terminated by SIGHUP; not expected)
+2022-06-15 18:37:34,306 WARN received SIGHUP indicating restart request
+2022-06-15 18:37:34,775 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-06-15 18:37:34,869 INFO RPC interface 'supervisor' initialized
+2022-06-15 18:37:34,876 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-06-15 18:37:34,889 INFO supervisord started with pid 1702
+2022-06-15 18:37:35,897 INFO spawned: 'Ratchet' with pid 47459
+2022-06-15 18:37:36,899 INFO success: Ratchet entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-15 18:40:09,917 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-06-15 18:40:09,925 INFO RPC interface 'supervisor' initialized
+2022-06-15 18:40:09,925 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-06-15 18:40:09,928 INFO daemonizing the supervisord process
+2022-06-15 18:40:09,928 INFO supervisord started with pid 1609
+2022-06-15 18:40:10,931 INFO spawned: 'Ratchet' with pid 1619
+2022-06-15 18:40:11,933 INFO success: Ratchet entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-07-25 16:58:50,462 INFO exited: Ratchet (terminated by SIGTERM; not expected)
+2022-07-25 16:58:50,508 WARN received SIGHUP indicating restart request
+2022-07-25 16:58:50,973 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-07-25 16:58:51,039 INFO RPC interface 'supervisor' initialized
+2022-07-25 16:58:51,050 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-07-25 16:58:51,064 INFO supervisord started with pid 1609
+2022-07-25 16:58:52,073 INFO spawned: 'Ratchet' with pid 1637887
+2022-07-25 16:58:53,075 INFO success: Ratchet entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

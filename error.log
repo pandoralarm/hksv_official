@@ -1,0 +1,129 @@
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 00:00:19.094856 2022] [ssl:warn] [pid 1015] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 00:00:19.095070 2022] [mpm_prefork:notice] [pid 1015] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 00:00:19.095076 2022] [core:notice] [pid 1015] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 08:58:28.335997 2022] [mpm_prefork:notice] [pid 1015] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 08:58:46.442268 2022] [ssl:warn] [pid 857] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 08:58:46.857161 2022] [ssl:warn] [pid 910] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 08:58:46.869767 2022] [mpm_prefork:notice] [pid 910] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 08:58:46.869794 2022] [core:notice] [pid 910] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 09:10:35.349425 2022] [mpm_prefork:notice] [pid 910] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 09:10:35.504854 2022] [ssl:warn] [pid 3564] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 09:10:35.582869 2022] [ssl:warn] [pid 3565] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 09:10:35.587543 2022] [mpm_prefork:notice] [pid 3565] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 09:10:35.587572 2022] [core:notice] [pid 3565] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 09:13:35.859717 2022] [mpm_prefork:notice] [pid 3565] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 09:13:35.933559 2022] [ssl:warn] [pid 3981] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 09:13:36.020370 2022] [ssl:warn] [pid 3982] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 09:13:36.024934 2022] [mpm_prefork:notice] [pid 3982] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 09:13:36.024977 2022] [core:notice] [pid 3982] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 09:14:00.337589 2022] [mpm_prefork:notice] [pid 3982] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 09:14:00.398462 2022] [ssl:warn] [pid 4145] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 09:14:00.480635 2022] [ssl:warn] [pid 4146] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 09:14:00.486591 2022] [mpm_prefork:notice] [pid 4146] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 09:14:00.486617 2022] [core:notice] [pid 4146] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 09:14:28.865105 2022] [mpm_prefork:notice] [pid 4146] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 09:14:28.925264 2022] [ssl:warn] [pid 4325] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 09:14:28.977155 2022] [ssl:warn] [pid 4326] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 09:14:28.981387 2022] [mpm_prefork:notice] [pid 4326] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 09:14:28.981417 2022] [core:notice] [pid 4326] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 09:16:42.377943 2022] [mpm_prefork:notice] [pid 4326] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 09:16:42.482944 2022] [ssl:warn] [pid 4533] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 09:16:42.575961 2022] [ssl:warn] [pid 4534] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 09:16:42.582343 2022] [mpm_prefork:notice] [pid 4534] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 09:16:42.582376 2022] [core:notice] [pid 4534] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 09:16:46.611986 2022] [proxy:error] [pid 4577] (111)Connection refused: AH00957: WS: attempt to connect to 172.17.11.4:8080 (halokonselingsv.ipb.ac.id) failed
+[Wed Jun 15 09:16:46.612040 2022] [proxy_wstunnel:error] [pid 4577] [client 172.17.0.59:56658] AH02452: failed to make connection to backend: halokonselingsv.ipb.ac.id
+[Wed Jun 15 09:18:52.104655 2022] [mpm_prefork:notice] [pid 4534] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 09:18:52.167232 2022] [ssl:warn] [pid 4925] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 09:18:52.253799 2022] [ssl:warn] [pid 4927] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 09:18:52.258244 2022] [mpm_prefork:notice] [pid 4927] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 09:18:52.258266 2022] [core:notice] [pid 4927] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 09:18:56.921036 2022] [proxy:error] [pid 4971] (111)Connection refused: AH00957: WS: attempt to connect to 172.17.11.4:8080 (halokonselingsv.ipb.ac.id) failed
+[Wed Jun 15 09:18:56.921096 2022] [proxy_wstunnel:error] [pid 4971] [client 172.17.0.59:56732] AH02452: failed to make connection to backend: halokonselingsv.ipb.ac.id
+[Wed Jun 15 09:19:00.951105 2022] [proxy:error] [pid 4972] (111)Connection refused: AH00957: WS: attempt to connect to 172.17.11.4:8080 (halokonselingsv.ipb.ac.id) failed
+[Wed Jun 15 09:19:00.951169 2022] [proxy_wstunnel:error] [pid 4972] [client 172.17.0.59:56735] AH02452: failed to make connection to backend: halokonselingsv.ipb.ac.id
+[Wed Jun 15 09:19:13.383800 2022] [mpm_prefork:notice] [pid 4927] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 09:19:13.448592 2022] [ssl:warn] [pid 5132] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 09:19:13.504593 2022] [ssl:warn] [pid 5134] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 09:19:13.510235 2022] [mpm_prefork:notice] [pid 5134] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 09:19:13.510260 2022] [core:notice] [pid 5134] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 09:19:35.298705 2022] [mpm_prefork:notice] [pid 5134] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 09:19:35.360205 2022] [ssl:warn] [pid 5295] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 09:19:35.393690 2022] [ssl:warn] [pid 5298] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 09:19:35.397396 2022] [mpm_prefork:notice] [pid 5298] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 09:19:35.397417 2022] [core:notice] [pid 5298] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 09:20:05.497156 2022] [mpm_prefork:notice] [pid 5298] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 09:20:05.562205 2022] [ssl:warn] [pid 5515] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 09:20:05.596920 2022] [ssl:warn] [pid 5516] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 09:20:05.601111 2022] [mpm_prefork:notice] [pid 5516] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 09:20:05.601134 2022] [core:notice] [pid 5516] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 09:20:34.666799 2022] [mpm_prefork:notice] [pid 5516] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 09:20:34.737446 2022] [ssl:warn] [pid 5720] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 09:20:34.789656 2022] [ssl:warn] [pid 5721] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 09:20:34.795911 2022] [mpm_prefork:notice] [pid 5721] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 09:20:34.795938 2022] [core:notice] [pid 5721] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 11:57:58.431460 2022] [mpm_prefork:notice] [pid 5721] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 11:57:58.534594 2022] [ssl:warn] [pid 12286] AH01909: www.halokonselingsv.ipb.ac.id:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 11:57:58.612915 2022] [ssl:warn] [pid 12288] AH01909: www.halokonselingsv.ipb.ac.id:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 11:57:58.616832 2022] [mpm_prefork:notice] [pid 12288] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 11:57:58.616856 2022] [core:notice] [pid 12288] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 12:42:11.215313 2022] [mpm_prefork:notice] [pid 12288] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 12:42:11.353190 2022] [ssl:warn] [pid 19285] AH01909: www.halokonselingsv.ipb.ac.id:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 12:42:11.412971 2022] [ssl:warn] [pid 19286] AH01909: www.halokonselingsv.ipb.ac.id:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 12:42:11.416842 2022] [mpm_prefork:notice] [pid 19286] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 12:42:11.416866 2022] [core:notice] [pid 19286] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 12:42:58.498155 2022] [mpm_prefork:notice] [pid 19286] AH00169: caught SIGTERM, shutting down
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 12:42:58.589360 2022] [mpm_prefork:notice] [pid 19429] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 12:42:58.589497 2022] [core:notice] [pid 19429] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 12:43:23.478655 2022] [mpm_prefork:notice] [pid 19429] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 12:43:23.534554 2022] [ssl:warn] [pid 19529] AH01909: www.halokonselingsv.ipb.ac.id:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 12:43:23.566831 2022] [ssl:warn] [pid 19530] AH01909: www.halokonselingsv.ipb.ac.id:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 12:43:23.570513 2022] [mpm_prefork:notice] [pid 19530] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 12:43:23.570533 2022] [core:notice] [pid 19530] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 12:43:47.313291 2022] [mpm_prefork:notice] [pid 19530] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 12:43:47.368453 2022] [ssl:warn] [pid 19681] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 12:43:47.404131 2022] [ssl:warn] [pid 19682] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 12:43:47.409455 2022] [mpm_prefork:notice] [pid 19682] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 12:43:47.409482 2022] [core:notice] [pid 19682] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 12:43:56.079058 2022] [mpm_prefork:notice] [pid 19682] AH00169: caught SIGTERM, shutting down
+[Wed Jun 15 12:43:56.135113 2022] [ssl:warn] [pid 19764] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+PHP Warning:  Module 'curl' already loaded in Unknown on line 0
+PHP Warning:  Module 'intl' already loaded in Unknown on line 0
+[Wed Jun 15 12:43:56.170433 2022] [ssl:warn] [pid 19765] AH01909: localhost:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Jun 15 12:43:56.174419 2022] [mpm_prefork:notice] [pid 19765] AH00163: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f configured -- resuming normal operations
+[Wed Jun 15 12:43:56.174446 2022] [core:notice] [pid 19765] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jun 15 12:44:21.803579 2022] [mpm_prefork:notice] [pid 19765] AH00169: caught SIGTERM, shutting down
